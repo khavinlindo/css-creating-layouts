@@ -33,30 +33,12 @@
         .layout {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: "header header header"
-                                 "nav    main   sidebar"
-                                 "footer footer footer";
             gap: 0.5em;
         }
 
-        header {
-            grid-area: header;
-        }
-        
-        nav {
-            grid-area: nav;
-        }
-
-        main {
-            grid-area: main;
-        }
-
-        aside {
-            grid-area: sidebar;
-        }
-
+        header,
         footer {
-            grid-area: footer;
+            grid-column: 1 / 4; /*Row start, column start, row end, column end*/
         }
 
 

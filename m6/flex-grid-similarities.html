@@ -30,22 +30,22 @@
             border-radius: 0.25em;
         }
 
-
-
         .flex-container {
-            display: flex;
+            /* display: inline-flex; -- Inline block */
+            display: flex;  /* Block level */
             gap: 0.5em;
-            align-items: center;
-            justify-content: end;
+            align-items: center; /* Keeps items at intrinsic instead of default stretch with container */  
+            justify-content: end; 
             width: 400px;
             height: 200px;
         }
 
         .grid-container {
-            display: grid;
+            /* display: inline-grid; -- Inline block */
+            display: grid;  /* Block level */
             grid-auto-flow: column;
-            align-items: center;
-            justify-content: end;
+            align-items: center; /* Keeps items at intrinsic instead of default stretch with container */
+            justify-content: end; 
             gap: 0.5em;
             width: 400px;
             height: 200px;
